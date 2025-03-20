@@ -1,0 +1,18 @@
+1
+nil
+2
+{ 
+["mines"] = table: 1A954BA0,
+["mine_elements"] = table: 1A957300,
+["mine_unit"] = [Unit '#ID[34a8f6f2c2593636]'],
+["mine"] = true,
+} 
+
+{ 
+[1] = [Unit '#ID[34a8f6f2c2593636]'],
+[2] = [Unit '#ID[34a8f6f2c2593636]'],
+[3] = [Unit '#ID[34a8f6f2c2593636]'],
+[4] = [Unit '#ID[34a8f6f2c2593636]'],
+} 
+
+[Unit '#ID[34a8f6f2c2593636]']

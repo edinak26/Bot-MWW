@@ -141,6 +141,19 @@ end
 --- General bot update stuff like pathing should be added here
 ---@param self table
 function Bot:update_debug(dt)
+    local function dump(o)
+        if type(o) == 'table' then
+           local s = '{ '
+           for k,v in pairs(o) do
+              if type(k) ~= 'number' then k = '"'..k..'"' end
+              s = s .. '['..k..'] = ' .. tostring(v) .. ','
+           end
+           return s .. '} '
+        else
+           return tostring(o)
+        end
+     end
+    pdDebug.text("-----------------Current path: %s", tostring(dump(self.ai_data.current_path or {})))
     local ai_data = self.ai_data
     local dt = dt
     local queue = self.queue or QueueController -- this "or QueueController" is here just make autofill work
